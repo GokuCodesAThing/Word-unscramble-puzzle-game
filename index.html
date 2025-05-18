@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Unscramble Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="code-pattern"></div>
+    <div class="container">
+        <h1>Word Unscramble Puzzle</h1>
+        <div class="game-info">
+            <div class="score-container">
+                <p>Points: <span id="points">0</span></p>
+            </div>
+            <div class="level-container">
+                <p>Level: <span id="current-level">1</span></p>
+                <div class="progress-bar">
+                    <div id="level-progress"></div>
+                </div>
+            </div>
+        </div>
+        <div class="level-selection" id="level-selection">
+            <h2>Select Difficulty</h2>
+            <button class="level-btn" data-level="1">Easy</button>
+            <button class="level-btn" data-level="2">Medium</button>
+            <button class="level-btn" data-level="3">Hard</button>
+        </div>
+        <div class="game-container" id="game-container">
+            <div class="scrambled-word" id="scrambled-word"></div>
+            <input type="text" id="user-input" placeholder="Enter your guess...">
+            <div class="button-container">
+                <button id="check-btn">Check Answer</button>
+                <button id="hint-btn">Get Hint</button>
+                <button id="next-btn">Next Word</button>
+            </div>
+            <div id="message"></div>
+            <div id="hint-text"></div>
+            <button id="back-btn" class="back-button">Back to Menu</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
